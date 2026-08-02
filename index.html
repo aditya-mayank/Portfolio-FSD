@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Aditya Mayank — Computer Science student at NIT Warangal.">
+    <title>Aditya Mayank — Portfolio</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Sidebar Header & Navigation -->
+    <header class="aside" role="banner">
+        <div class="logo">
+            <a href="#home" aria-label="Aditya Mayank — Home"><span>A</span>ditya</a>
+        </div>
+
+        <button class="nav-toggler" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+            <span aria-hidden="true"></span>
+        </button>
+
+        <nav id="primary-nav" aria-label="Primary navigation">
+            <ul class="nav">
+                <li><a href="#home" class="active" aria-current="page"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
+                <li><a href="#services"><i class="fa fa-list" aria-hidden="true"></i> Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase" aria-hidden="true"></i> Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments" aria-hidden="true"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-links">
+            <h4>Connect with me</h4>
+            <div class="social-icons">
+                <a href="https://github.com/aditya-mayank/" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/adityamayank" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/aditya__mayank/" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:adityamayank11@gmail.com" title="Email" aria-label="Email me">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+
+        <!-- Home Section -->
+        <section class="home section active" id="home" aria-labelledby="home-heading">
+            <div class="container">
+                <div class="row">
+                    <div class="home-info padd-15">
+                        <h1 class="hello">Hello, my name is <span class="name">Aditya Mayank</span></h1>
+                        <h3 class="my-profession">I'm <span class="typing"></span></h3>
+                        <p>Computer Science & Engineering student at NIT Warangal, LeetCode Knight (Top 2% globally), full-stack MERN developer, and AI systems enthusiast with a passion for competitive coding, real-time web engines, music, and pencil sketching.
+                        </p>
+                        <a href="./CV/AdityaMayank_InternshalaResume.pdf" class="btn download-cv" download
+                           aria-label="Download Aditya Mayank's CV">Download Resume</a>
+                    </div>
+
+                    <div class="home-img padd-15">
+                        <img src="images/hero2.jpg"
+                             alt="Aditya Mayank — Computer Science student at NIT Warangal">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2 id="about-heading">About Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-content padd-15">
+
+                        <div class="row">
+                            <div class="about-text padd-15">
+                                <p class="about-para">
+                                    I am currently pursuing my B.Tech in Computer Science and Engineering at NIT Warangal (CGPA: 8.34). My technical expertise spans full-stack web development with the MERN stack, real-time multiplayer engines via Socket.IO, custom NLP matching algorithms, and automated background scraping agents integrated with AI APIs.
+                                </p>
+                                <p class="about-para">
+                                    As a <strong>LeetCode Knight (Top 2% globally)</strong>, I have a deep foundation in Data Structures, Algorithms, and System Design. I regularly solve complex algorithmic problems across LeetCode, Codeforces, and CodeChef, combining strong logic with clean, efficient code.
+                                </p>
+                                <p class="about-para">
+                                    Beyond software engineering, I am the Co-Founder of <strong>Melodyy Mitra</strong> (NIT Warangal's campus music group), a guitarist, flutist, and pencil sketch artist. I thrive at the intersection of analytical problem-solving, rapid development, and creative collaboration.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="personal-info padd-15">
+                                <div class="row">
+                                    <div class="info-item padd-15">
+                                        <p>Degree : <span>B.Tech CSE @ NIT Warangal</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>CGPA : <span>8.34 / 10.0</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>CP Rating : <span>LeetCode Knight (Top 2%)</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Scholarship : <span>Nepal COMPEX Recipient</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Languages : <span>English, Hindi, Nepali, Marwadi</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Email : <span>adityamayank11@gmail.com</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Residence : <span>Kathmandu, Nepal / Warangal</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Freelance : <span>Available</span></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="buttons padd-15">
+                                        <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills padd-15">
+                                <div class="row">
+                                    <div class="skill-item padd-15">
+                                        <h5>C++ &amp; DSA</h5>
+                                        <div class="progress">
+                                            <div class="progress-in progress-90"></div>
+                                            <div class="skill-percent">95%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>MERN &amp; React</h5>
+                                        <div class="progress">
+                                            <div class="progress-in progress-90"></div>
+                                            <div class="skill-percent">90%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>Node.js &amp; Socket.IO</h5>
+                                        <div class="progress">
+                                            <div class="progress-in progress-80"></div>
+                                            <div class="skill-percent">85%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>Python &amp; Automation</h5>
+                                        <div class="progress">
+                                            <div class="progress-in progress-80"></div>
+                                            <div class="skill-percent">85%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>Databases (MongoDB/SQLite)</h5>
+                                        <div class="progress">
+                                            <div class="progress-in progress-80"></div>
+                                            <div class="skill-percent">80%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>AI APIs &amp; OAuth</h5>
+                                        <div class="progress">
+                                            <div class="progress-in progress-80"></div>
+                                            <div class="skill-percent">80%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="education padd-15">
+                                <h3 class="title">Education</h3>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
+                                        <div class="timeline shadow-dark">
+
+                                            <article class="timeline-item">
+                                                <div class="circle-dot" aria-hidden="true"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i> 2024 – 2028
+                                                </h3>
+                                                <h4 class="timeline-title">BTech, Computer Science and Engineering</h4>
+                                                <p class="timeline-text"><strong>National Institute of Technology (NIT), Warangal</strong> | <strong>CGPA: 8.34</strong><br>
+                                                Coursework: Data Structures & Algorithms, Object-Oriented Programming (Java), Database Management Systems, Operating Systems, Software Engineering.</p>
+                                            </article>
+
+                                            <article class="timeline-item">
+                                                <div class="circle-dot" aria-hidden="true"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i> 2024
+                                                </h3>
+                                                <h4 class="timeline-title">Higher Secondary Education (CBSE XII)</h4>
+                                                <p class="timeline-text"><strong>S.R. Public Senior Secondary School</strong> | <strong>CBSE XII Percentage: 89.8%</strong><br>
+                                                Built a strong foundation in core Science, Mathematics, and Computer Science fundamentals.</p>
+                                            </article>
+
+                                            <article class="timeline-item">
+                                                <div class="circle-dot" aria-hidden="true"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i> 2022
+                                                </h3>
+                                                <h4 class="timeline-title">Secondary Education (SEE Grade X)</h4>
+                                                <p class="timeline-text"><strong>D.A.V. Sushil Kedia Vishwa Bharati, Kathmandu</strong> | <strong>GPA: 3.9 / 4.0</strong><br>
+                                                Recognized for academic excellence across core disciplines.</p>
+                                            </article>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience padd-15">
+                                <h3 class="title">Positions of Responsibility &amp; Achievements</h3>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
+                                        <div class="timeline shadow-dark">
+
+                                            <article class="timeline-item">
+                                                <div class="circle-dot" aria-hidden="true"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i> 2026
+                                                </h3>
+                                                <h4 class="timeline-title">LeetCode Knight — Top 2% Globally</h4>
+                                                <p class="timeline-text">Ranked in the top 2% of coders worldwide on LeetCode. Adept in advanced data structures, graph algorithms, and dynamic programming across LeetCode, Codeforces, and CodeChef.</p>
+                                            </article>
+
+                                            <article class="timeline-item">
+                                                <div class="circle-dot" aria-hidden="true"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i> 2025
+                                                </h3>
+                                                <h4 class="timeline-title">Nepal COMPEX Scholarship Recipient</h4>
+                                                <p class="timeline-text">Awarded the prestigious COMPEX Scholarship by the Embassy of India for academic excellence to pursue B.Tech in Computer Science and Engineering at NIT Warangal.</p>
+                                            </article>
+
+                                            <article class="timeline-item">
+                                                <div class="circle-dot" aria-hidden="true"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i> Nov 2024 – Present
+                                                </h3>
+                                                <h4 class="timeline-title">Co-Founder, Melodyy Mitra (College Music Group)</h4>
+                                                <p class="timeline-text">Co-founded and scaled a campus music group at NIT Warangal; organized, managed, and performed live instrumental music at multiple large-scale cultural events.</p>
+                                            </article>
+
+                                            <article class="timeline-item">
+                                                <div class="circle-dot" aria-hidden="true"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i> Dec 2024 – Aug 2025
+                                                </h3>
+                                                <h4 class="timeline-title">Executive Member, CSES NIT Warangal</h4>
+                                                <p class="timeline-text">Contributed to technical projects and managed outreach/communication initiatives across the Web Development and Public Relations teams in the Computer Science and Engineering Society.</p>
+                                            </article>
+
+                                            <article class="timeline-item">
+                                                <div class="circle-dot" aria-hidden="true"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i> 2026
+                                                </h3>
+                                                <h4 class="timeline-title">1st Place, Solo Instrumental Competition</h4>
+                                                <p class="timeline-text">Secured 1st place in the flagship Solo Instrumental Competition at Spring Spree Cultural Fest, NIT Warangal.</p>
+                                            </article>
+
+                                            <article class="timeline-item">
+                                                <div class="circle-dot" aria-hidden="true"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i> 2024
+                                                </h3>
+                                                <h4 class="timeline-title">Runner-up, Noobathon Hackathon</h4>
+                                                <p class="timeline-text">Runner-up in Noobathon Hackathon at NIT Warangal for designing and building <a href="https://aditya-mayank.github.io/Dal-velopers/index.html" target="_blank" rel="noopener noreferrer" class="myWebsite">Central Perk</a> café web platform under 24-hour deadline.</p>
+                                            </article>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="service section" id="services" aria-labelledby="services-heading">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2 id="services-heading">Services</h2>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <article class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon" aria-hidden="true">
+                                <i class="fa fa-mobile-alt"></i>
+                            </div>
+                            <h4>Responsive Web Design</h4>
+                            <p>Designing visually appealing and responsive websites optimised for all screen sizes,
+                                ensuring a smooth user experience across devices.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon" aria-hidden="true">
+                                <i class="fa fa-laptop-code"></i>
+                            </div>
+                            <h4>Frontend Development</h4>
+                            <p>Building dynamic and interactive user interfaces using HTML, CSS, JavaScript, and
+                                modern frameworks to bring web designs to life.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon" aria-hidden="true">
+                                <i class="fa fa-pencil-alt"></i>
+                            </div>
+                            <h4>Creative Sketching &amp; Illustration</h4>
+                            <p>Expressing ideas and emotions through detailed pencil sketches and conceptual
+                                illustrations—combining technical precision with artistic flair.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon" aria-hidden="true">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <h4>Programming &amp; Logic Building</h4>
+                            <p>Solving algorithmic problems and building efficient, scalable logic using languages
+                                like C++.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon" aria-hidden="true">
+                                <i class="fa fa-brain"></i>
+                            </div>
+                            <h4>Problem Solving &amp; Logical Thinking</h4>
+                            <p>Solving complex problems using logical thinking and algorithms, refined through
+                                hackathons and academic projects.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon" aria-hidden="true">
+                                <i class="fa fa-bullhorn"></i>
+                            </div>
+                            <h4>PR &amp; Event Communication</h4>
+                            <p>Managing public relations, creating outreach strategies, and handling communication
+                                for student-led tech events and communities.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio / Projects Section -->
+        <section class="portfolio section" id="portfolio" aria-labelledby="portfolio-heading">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2 id="portfolio-heading">Portfolio</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="portfolio-heading padd-15">
+                        <h2>My Latest Projects :</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <!-- New Project 1: AI Quiz Builder -->
+                    <article class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/portfolio/portfolio-8.png"
+                                     alt="AI Quiz Builder — Real-Time Multiplayer Assessment Platform">
+                                <div class="portfolio-overlay">
+                                    <h3>AI Quiz Builder</h3>
+                                    <p>Real-time multiplayer quiz engine powered by Socket.IO, Gemini AI &amp; MERN stack.</p>
+                                    <a href="https://github.com/aditya-mayank/AI-Quiz-Builder"
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="github-btn"
+                                       aria-label="View AI Quiz Builder on GitHub"
+                                       title="View on GitHub"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- New Project 2: ContestPilot -->
+                    <article class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/portfolio/portfolio-7.png"
+                                     alt="ContestPilot — CP Automation Agent">
+                                <div class="portfolio-overlay">
+                                    <h3>ContestPilot</h3>
+                                    <p>CP contest automation agent syncing Codeforces, LeetCode, AtCoder &amp; CodeChef to Google Calendar.</p>
+                                    <a href="https://github.com/aditya-mayank/ContestPilot"
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="github-btn"
+                                       aria-label="View ContestPilot on GitHub"
+                                       title="View on GitHub"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- New Project 3: BackToOwner -->
+                    <article class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/portfolio/portfolio-6.png"
+                                     alt="BackToOwner — Lost & Found Management System">
+                                <div class="portfolio-overlay">
+                                    <h3>BackToOwner</h3>
+                                    <p>Campus lost &amp; found management system with custom NLP item-matching engine.</p>
+                                    <a href="https://github.com/aditya-mayank/BackToOwner"
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="github-btn"
+                                       aria-label="View BackToOwner on GitHub"
+                                       title="View on GitHub"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Original Project 1: Sprintz -->
+                    <article class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/portfolio/portfolio-5.jpg"
+                                     alt="Sprintz — fast-paced 2D platformer game built with Java AWT">
+                                <div class="portfolio-overlay">
+                                    <h3>Sprintz</h3>
+                                    <p>Fast-paced 2D platformer game built with Java AWT.</p>
+                                    <a href="https://github.com/aditya-mayank/Sprintz/"
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="github-btn"
+                                       aria-label="View Sprintz on GitHub"
+                                       title="View on GitHub"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Original Project 2: Melodyy Mitra -->
+                    <article class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/portfolio/portfolio-4.jpg"
+                                     alt="Melodyy Mitra — college music group website sharing songs and jam sessions">
+                                <div class="portfolio-overlay">
+                                    <h3>Melodyy Mitra</h3>
+                                    <p>A college music group sharing songs and jam sessions.</p>
+                                    <a href="https://github.com/aditya-mayank/MelodyyMitra/"
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="github-btn"
+                                       aria-label="View Melodyy Mitra on GitHub"
+                                       title="View on GitHub"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Original Project 3: Calculator (Java) -->
+                    <article class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/portfolio/portfolio-3.jpg"
+                                     alt="Java Calculator — basic calculator application for arithmetic operations">
+                                <div class="portfolio-overlay">
+                                    <h3>Calculator (Java)</h3>
+                                    <p>A basic Java calculator for simple arithmetic operations.</p>
+                                    <a href="https://github.com/aditya-mayank/"
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="github-btn"
+                                       aria-label="View Java Calculator on GitHub"
+                                       title="View on GitHub"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Original Project 4: Sound History -->
+                    <article class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/portfolio/portfolio-2.jpg"
+                                     alt="Sound History — web app showcasing the evolution of music genres">
+                                <div class="portfolio-overlay">
+                                    <h3>Sound History</h3>
+                                    <p>A web app showcasing the evolution of music genres.</p>
+                                    <a href="https://github.com/aditya-mayank/Sound__History"
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="github-btn"
+                                       aria-label="View Sound History on GitHub"
+                                       title="View on GitHub"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Original Project 5: Central Perk -->
+                    <article class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/portfolio/portfolio-1.jpg"
+                                     alt="Central Perk — café-themed website created for Noobathon Hackathon">
+                                <div class="portfolio-overlay">
+                                    <h3>Central Perk</h3>
+                                    <p>A café-themed website with menu, cart, login, and chatbot features.</p>
+                                    <a href="https://github.com/aditya-mayank/Dal-velopers"
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="github-btn"
+                                       aria-label="View Central Perk on GitHub"
+                                       title="View on GitHub"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2 id="contact-heading">Contact Me</h2>
+                    </div>
+                </div>
+
+                <h3 class="contact-title padd-15">Have Any Questions?</h3>
+                <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
+
+                <div class="row">
+                    <div class="contact-info-item padd-15">
+                        <div class="icon" aria-hidden="true"><i class="fa fa-phone"></i></div>
+                        <h4>Call Me On</h4>
+                        <p>+91 8409411568</p>
+                    </div>
+                    <div class="contact-info-item padd-15">
+                        <div class="icon" aria-hidden="true"><i class="fa fa-map-marker-alt"></i></div>
+                        <h4>Location</h4>
+                        <p>NIT Warangal, Telangana</p>
+                    </div>
+                    <div class="contact-info-item padd-15">
+                        <div class="icon" aria-hidden="true"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>adityamayank11@gmail.com</p>
+                    </div>
+                    <div class="contact-info-item padd-15">
+                        <div class="icon" aria-hidden="true"><i class="fab fa-instagram"></i></div>
+                        <h4>Instagram</h4>
+                        <p>
+                            <a href="https://www.instagram.com/aditya__mayank/"
+                               target="_blank" rel="noopener noreferrer"
+                               class="myInsta">aditya__mayank</a>
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+
+                <div class="row">
+                    <form class="contact-form padd-15"
+                          id="contactForm"
+                          action="https://formsubmit.co/05531b5038ad9ec2b48205da8d3a97f0"
+                          method="POST"
+                          novalidate>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://aditya-mayank.github.io/">
+
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <label for="contact-name" class="form-label">Full Name <span aria-hidden="true">*</span></label>
+                                    <input type="text"
+                                           id="contact-name"
+                                           class="form-control"
+                                           name="Name"
+                                           placeholder="Your name"
+                                           required
+                                           aria-required="true"
+                                           autocomplete="name">
+                                </div>
+                            </div>
+
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <label for="contact-email" class="form-label">Email Address <span aria-hidden="true">*</span></label>
+                                    <input type="email"
+                                           id="contact-email"
+                                           class="form-control"
+                                           name="Email"
+                                           placeholder="your@email.com"
+                                           required
+                                           aria-required="true"
+                                           autocomplete="email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <label for="contact-subject" class="form-label">Subject <span aria-hidden="true">*</span></label>
+                                    <input type="text"
+                                           id="contact-subject"
+                                           class="form-control"
+                                           name="Subject"
+                                           placeholder="What is this about?"
+                                           required
+                                           aria-required="true">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <label for="contact-message" class="form-label">Message <span aria-hidden="true">*</span></label>
+                                    <textarea id="contact-message"
+                                              class="form-control"
+                                              name="Message"
+                                              placeholder="Write your message here…"
+                                              rows="6"
+                                              required
+                                              aria-required="true"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <button type="submit" class="btn" id="submit-btn">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="popup" class="popup" role="status" aria-live="polite"></div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <p>
+            &copy; <span id="footer-year">2025</span> Aditya Mayank. Designed &amp; built with HTML5 &amp; CSS3.
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+            integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
