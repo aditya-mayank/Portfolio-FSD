@@ -1,0 +1,91 @@
+.style-switcher {
+  position: relative;
+  display: inline-block;
+  z-index: 101;
+}
+
+.style-switcher-toggler {
+  background: var(--bg-black-50);
+  border: 1px solid var(--bg-black-50);
+  color: var(--text-black-900);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.style-switcher-toggler:hover {
+  border-color: var(--skin-color);
+  color: var(--skin-color);
+}
+
+.style-switcher-toggler i {
+  transition: transform 0.3s ease;
+}
+
+.style-switcher-toggler:hover i {
+  transform: rotate(90deg);
+}
+
+.style-switcher-popup {
+  position: absolute;
+  right: 0;
+  top: 120%;
+  background: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  padding: 15px;
+  border-radius: 8px;
+  width: 180px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.style-switcher-popup.open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.style-switcher-popup h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--text-black-900);
+  font-weight: 600;
+  border-bottom: 1px solid var(--bg-black-50);
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.style-switcher-popup .colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.style-switcher-popup .color-btn {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  padding: 0;
+}
+
+.style-switcher-popup .color-btn:hover {
+  transform: scale(1.1);
+}
+
+.style-switcher-popup .color-btn.active {
+  box-shadow: 0 0 0 2px var(--bg-black-100), 0 0 0 4px var(--text-black-700);
+}

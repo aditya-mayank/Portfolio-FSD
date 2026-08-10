@@ -1,0 +1,18 @@
+.tech-badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--bg-black-50);
+  color: var(--text-black-700);
+  border: 1px solid var(--bg-black-50);
+  margin: 3px 2px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.tech-badge:hover {
+  background: var(--skin-color);
+  color: white;
+  transform: translateY(-2px);
+}

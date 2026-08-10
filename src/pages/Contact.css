@@ -1,0 +1,84 @@
+.contact-section .container {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.contact-title {
+  color: var(--skin-color);
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.contact-sub-title {
+  color: var(--text-black-900);
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 52px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Info cards */
+.contact-info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px 40px;
+}
+
+.contact-info-card {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 15px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-info-card .icon i {
+  font-size: 26px;
+  color: var(--skin-color);
+}
+
+.contact-info-card h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-black-900);
+  text-transform: capitalize;
+  margin: 14px 0 5px;
+}
+
+.contact-info-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-black-700);
+}
+
+.contact-info-card p a {
+  color: var(--skin-color);
+  transition: opacity 0.3s ease;
+}
+
+.contact-info-card p a:hover {
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .contact-info-card {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .contact-sub-title {
+    font-size: 12px;
+    margin-bottom: 32px;
+  }
+}

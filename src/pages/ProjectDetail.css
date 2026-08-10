@@ -1,0 +1,137 @@
+.project-detail-section .container {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  max-width: 900px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--skin-color);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 36px;
+  transition: gap 0.2s ease, opacity 0.2s ease;
+}
+
+.back-link:hover {
+  gap: 14px;
+  opacity: 0.8;
+}
+
+.detail-hero-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 36px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.detail-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.detail-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-black-900);
+}
+
+.detail-category-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  background: var(--skin-color);
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.detail-tech-section {
+  margin: 24px 0;
+}
+
+.detail-tech-section h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-black-900);
+  margin-bottom: 10px;
+}
+
+.detail-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.detail-desc-section {
+  margin: 28px 0;
+}
+
+.detail-desc-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-black-900);
+  margin-bottom: 14px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.detail-desc-section h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 100%;
+  background: var(--skin-color);
+  border-radius: 2px;
+}
+
+.detail-desc-section p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-black-700);
+}
+
+.detail-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--bg-black-50);
+}
+
+/* Not found within detail */
+.detail-not-found {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--text-black-700);
+}
+
+.detail-not-found h2 {
+  font-size: 28px;
+  color: var(--text-black-900);
+  margin-bottom: 16px;
+}
+
+.detail-not-found p {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 480px) {
+  .detail-header h1 {
+    font-size: 24px;
+  }
+}

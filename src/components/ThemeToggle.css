@@ -1,0 +1,20 @@
+.theme-toggle-btn {
+  background: var(--bg-black-50);
+  border: 1px solid var(--bg-black-50);
+  color: var(--text-black-900);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  padding: 0;
+}
+
+.theme-toggle-btn:hover {
+  border-color: var(--skin-color);
+  color: var(--skin-color);
+}

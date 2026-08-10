@@ -1,0 +1,154 @@
+.home-section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--text-black-900);
+  background: var(--bg-black-900);
+}
+
+.home-section .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.home-info {
+  flex: 0 0 60%;
+  max-width: 60%;
+  padding: 0 15px;
+}
+
+.home-intro {
+  font-size: 28px;
+  margin: 15px 0;
+  font-weight: 600;
+  color: var(--text-black-900);
+}
+
+.home-intro .name-highlight {
+  font-family: 'Clicker Script', cursive;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--skin-color);
+}
+
+.home-profession {
+  font-size: 26px;
+  margin: 15px 0;
+  font-weight: 500;
+  color: var(--text-black-900);
+}
+
+.typing-text {
+  color: var(--skin-color);
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: var(--skin-color);
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.home-bio {
+  margin-bottom: 40px;
+  font-size: 17px;
+  color: var(--text-black-700);
+  line-height: 1.7;
+}
+
+.home-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.home-img {
+  flex: 0 0 40%;
+  max-width: 40%;
+  text-align: center;
+  position: relative;
+  padding: 0 15px;
+}
+
+.home-img-inner {
+  position: relative;
+  display: inline-block;
+}
+
+.home-img-inner::before {
+  content: '';
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-top: 10px solid var(--skin-color);
+  border-left: 10px solid var(--skin-color);
+  left: -20px;
+  top: -20px;
+}
+
+.home-img-inner::after {
+  content: '';
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-bottom: 10px solid var(--skin-color);
+  border-right: 10px solid var(--skin-color);
+  right: -20px;
+  bottom: -20px;
+}
+
+.home-img-inner img {
+  margin: auto;
+  border-radius: 5px;
+  height: 400px;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .home-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .home-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .home-img-inner img {
+    height: auto;
+    max-height: 320px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-intro {
+    font-size: 22px;
+  }
+
+  .home-profession {
+    font-size: 20px;
+  }
+
+  .home-bio {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+}
