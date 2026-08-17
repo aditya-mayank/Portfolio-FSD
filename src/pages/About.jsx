@@ -127,7 +127,7 @@ function About() {
 
         {/* Personal info + Skills */}
         <div className="row">
-          {/* Personal Info (prop drilling level 1 — data lives here) */}
+          {/* Personal Info */}
           <div className="personal-info-col">
             <div className="info-grid">
               {[
@@ -150,12 +150,12 @@ function About() {
             </div>
           </div>
 
-          {/* Skills column — prop drilling level 2 → SkillBar (level 3) */}
+          {/* Skills column */}
           <div className="skills-col">
             <div className="skills-col-inner">
               <h3>Technical Skills</h3>
               <div className="row" style={{ marginLeft: 0, marginRight: 0 }}>
-                {/* Prop drilling: About passes { name, percent } down to SkillBar */}
+
                 {skills.map(skill => (
                   <SkillBar key={skill.name} name={skill.name} percent={skill.percent} />
                 ))}

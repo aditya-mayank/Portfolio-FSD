@@ -69,7 +69,7 @@ function App() {
 
               <Route path="/projects" element={<Projects projects={projects} />} />
 
-              {/* Dynamic route — uses useParams to find project by ID */}
+              {/* Dynamic route */}
               <Route path="/projects/:projectId" element={<ProjectDetail projects={projects} />} />
 
               <Route path="/contact" element={<Contact />} />

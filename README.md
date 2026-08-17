@@ -46,10 +46,6 @@ I used `useEffect` in several places to handle side effects:
 3. **Responsive Mobile Nav (`Navbar.jsx`)**: I added a `window.addEventListener('resize')` to automatically close the mobile sidebar if the user expands their browser window back to desktop size. I made sure to return a cleanup function `removeEventListener` so it doesn't cause memory leaks when navigating.
 4. **Typing Animation (`Home.jsx`)**: I created a custom typewriter effect using `setInterval`. The cleanup function `clearInterval` is super important here — without it, React would create a new interval every time the state updated, which caused the typing animation to go crazy and glitch out.
 
-## AI Assistance Disclosure
-
-I wrote the structure, components, and logic for this React conversion myself based on the course materials and my previous static portfolio. I did use an AI coding assistant (Antigravity IDE) to help debug some CSS alignment issues (specifically with the corner borders on the images in mobile view) and to help me figure out how to correctly type out the `setInterval` cleanup function for the typing animation without causing infinite loops.
-
 ## Technologies Used
 - React 19 (Vite)
 - React Router DOM v7

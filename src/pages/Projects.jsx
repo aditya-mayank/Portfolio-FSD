@@ -31,7 +31,7 @@ function Projects({ projects }) {
           </div>
         </div>
 
-        {/* Map over projects array — prop drilling level 2: passes each project to ProjectCard */}
+        {/* Map over projects array */}
         <div className="projects-grid">
           {projects.map(project => (
             <ProjectCard
