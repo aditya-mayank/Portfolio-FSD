@@ -1,9 +1,5 @@
 import './ThemeToggle.css';
 
-/**
- * ThemeToggle — Receives isDark and onToggle props from Navbar (passed from App).
- * Demonstrates prop passing: App → Navbar → ThemeToggle
- */
 function ThemeToggle({ isDark, onToggle }) {
   return (
     <button

@@ -15,7 +15,6 @@
   padding: 30px;
 }
 
-/* Logo */
 .navbar-logo {
   position: absolute;
   top: 50px;
@@ -222,7 +221,6 @@
   top: 0;
 }
 
-/* Responsive */
 @media (max-width: 1199px) {
   .navbar {
     left: -270px;

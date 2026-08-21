@@ -27,9 +27,9 @@ function Home() {
     return () => clearTimeout(timer);
   }, [isLoading]);
 
-  // Typing animation effect
+  
   useEffect(() => {
-    if (isLoading) return; // don't start while loading
+    if (isLoading) return; 
 
     const currentStr = TYPED_STRINGS[strIndex];
     const typeSpeed = isDeleting ? 40 : 70;
@@ -41,7 +41,7 @@ function Home() {
           setTypedText(currentStr.slice(0, charIndex + 1));
           setCharIndex(prev => prev + 1);
         } else {
-          // Pause then start deleting
+          
           setTimeout(() => setIsDeleting(true), 1200);
         }
       } else {

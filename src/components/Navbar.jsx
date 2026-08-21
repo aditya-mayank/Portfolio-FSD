@@ -8,7 +8,7 @@ import './Navbar.css';
 function Navbar({ isDark, onToggleTheme, skinColor, onColorChange }) {
   const [navOpen, setNavOpen] = useState(false);
 
-  // Close sidebar on resize to desktop
+  
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth > 1199 && navOpen) {
@@ -16,7 +16,7 @@ function Navbar({ isDark, onToggleTheme, skinColor, onColorChange }) {
       }
     }
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize); // cleanup
+    return () => window.removeEventListener('resize', handleResize); 
   }, [navOpen]);
 
   function closeNav() {
@@ -34,7 +34,7 @@ function Navbar({ isDark, onToggleTheme, skinColor, onColorChange }) {
 
   return (
     <>
-      {/* Mobile hamburger */}
+      {}
       <button
         className={`nav-toggler${navOpen ? ' open' : ''}`}
         aria-label="Toggle navigation menu"
@@ -45,15 +45,15 @@ function Navbar({ isDark, onToggleTheme, skinColor, onColorChange }) {
         <span aria-hidden="true" />
       </button>
 
-      {/* Theme and Color toggles (Global Fixed) */}
+      {}
       <div className="theme-toggles-wrap">
         <ThemeToggle isDark={isDark} onToggle={onToggleTheme} />
         <StyleSwitcher skinColor={skinColor} onColorChange={onColorChange} />
       </div>
 
-      {/* Sidebar */}
+      {}
       <header className={`navbar${navOpen ? ' open' : ''}`} role="banner">
-        {/* Logo */}
+        {}
         <div className="navbar-logo">
           <NavLink to="/home" aria-label="Aditya Mayank — Home" onClick={closeNav}>
             <span>A</span>ditya
@@ -62,7 +62,7 @@ function Navbar({ isDark, onToggleTheme, skinColor, onColorChange }) {
 
 
 
-        {/* Navigation */}
+        {}
         <nav id="primary-nav" className="navbar-nav" aria-label="Primary navigation">
           <ul>
             {navLinks.map(({ to, icon, label }) => (
@@ -80,7 +80,7 @@ function Navbar({ isDark, onToggleTheme, skinColor, onColorChange }) {
           </ul>
         </nav>
 
-        {/* Social Links */}
+        {}
         <div className="navbar-social">
           <h4>Connect with me</h4>
           <div className="social-icons">

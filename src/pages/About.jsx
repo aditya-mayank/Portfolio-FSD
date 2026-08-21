@@ -2,16 +2,6 @@ import { Link } from 'react-router-dom';
 import SkillBar from '../components/SkillBar';
 import './About.css';
 
-/**
- * Prop drilling demonstration (About page):
- *   About (receives skills via const) → renders SkillList inline →
- *   maps over skills → passes { name, percent } to SkillBar
- *
- *   Level 1: About has skills array
- *   Level 2: About passes skillItem to SkillBar (via map)
- *   (SkillBar is the grandchild in context of the full tree:
- *    App → About → SkillBar)
- */
 
 const skills = [
   { name: 'C++ & DSA',               percent: 95 },
@@ -94,14 +84,14 @@ function About() {
   return (
     <section className="about-section page-section" id="about" aria-labelledby="about-heading">
       <div className="container">
-        {/* Section heading */}
+        {}
         <div className="row">
           <div className="section-title">
             <h2 id="about-heading">About Me</h2>
           </div>
         </div>
 
-        {/* Bio paragraphs */}
+        {}
         <div className="row">
           <div className="about-text-block">
             <p>
@@ -125,9 +115,9 @@ function About() {
           </div>
         </div>
 
-        {/* Personal info + Skills */}
+        {}
         <div className="row">
-          {/* Personal Info */}
+          {}
           <div className="personal-info-col">
             <div className="info-grid">
               {[
@@ -150,7 +140,7 @@ function About() {
             </div>
           </div>
 
-          {/* Skills column */}
+          {}
           <div className="skills-col">
             <div className="skills-col-inner">
               <h3>Technical Skills</h3>
@@ -164,9 +154,9 @@ function About() {
           </div>
         </div>
 
-        {/* Timelines */}
+        {}
         <div className="row timeline-row">
-          {/* Education */}
+          {}
           <div className="timeline-col">
             <h3 className="title">Education</h3>
             <div className="timeline-box shadow-dark">
@@ -183,7 +173,7 @@ function About() {
             </div>
           </div>
 
-          {/* Achievements */}
+          {}
           <div className="timeline-col">
             <h3 className="title">Positions &amp; Achievements</h3>
             <div className="timeline-box shadow-dark">

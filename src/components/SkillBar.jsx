@@ -1,10 +1,5 @@
 import './SkillBar.css';
 
-/**
- * SkillBar — Grandchild component (prop drilling level 3).
- * About (page) → skills array prop → SkillList (inline) → SkillBar
- * Receives: name (string), percent (number)
- */
 function SkillBar({ name, percent }) {
   return (
     <div className="skill-bar-wrap">

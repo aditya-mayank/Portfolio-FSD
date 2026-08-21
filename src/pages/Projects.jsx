@@ -1,16 +1,6 @@
 import ProjectCard from '../components/ProjectCard';
 import './Projects.css';
 
-/**
- * Projects page.
- *
- * Prop drilling chain (levels 1 → 2 → 3):
- *   App.jsx   passes  `projects` array → Projects  (level 1)
- *   Projects  passes  each project obj → ProjectCard (level 2)
- *   ProjectCard passes each tech string → TechBadge   (level 3)
- *
- * @param {Object[]} projects - array of project objects from App
- */
 function Projects({ projects }) {
   return (
     <section
@@ -31,7 +21,7 @@ function Projects({ projects }) {
           </div>
         </div>
 
-        {/* Map over projects array */}
+        {}
         <div className="projects-grid">
           {projects.map(project => (
             <ProjectCard

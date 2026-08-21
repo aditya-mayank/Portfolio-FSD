@@ -3,7 +3,6 @@
   padding-bottom: 70px;
 }
 
-/* About text */
 .about-text-block {
   flex: 0 0 100%;
   max-width: 100%;
@@ -18,7 +17,6 @@
   margin-bottom: 12px;
 }
 
-/* Personal info + skills row */
 .personal-info-col {
   flex: 0 0 60%;
   max-width: 60%;
@@ -50,7 +48,6 @@
   margin-top: 30px;
 }
 
-/* Skills column */
 .skills-col {
   flex: 0 0 40%;
   max-width: 40%;
@@ -68,7 +65,6 @@
   margin-bottom: 20px;
 }
 
-/* Timeline rows */
 .timeline-row {
   margin-top: 40px;
 }
@@ -161,7 +157,6 @@
   opacity: 0.7;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .personal-info-col,
   .skills-col,

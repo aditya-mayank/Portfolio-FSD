@@ -16,7 +16,7 @@ function Contact() {
       aria-labelledby="contact-heading"
     >
       <div className="container">
-        {/* Section heading */}
+        {}
         <div className="row">
           <div className="section-title">
             <h2 id="contact-heading">Contact Me</h2>
@@ -26,7 +26,7 @@ function Contact() {
         <h3 className="contact-title">Have Any Questions?</h3>
         <h4 className="contact-sub-title">I&apos;m At Your Service</h4>
 
-        {/* Contact info cards */}
+        {}
         <div className="contact-info-grid">
           {contactInfo.map(({ id, icon, label, value, link }) => (
             <div key={id} className="contact-info-card">
@@ -50,7 +50,7 @@ function Contact() {
         <h3 className="contact-title">Send Me An Email</h3>
         <h4 className="contact-sub-title">I&apos;m Very Responsive To Messages</h4>
 
-        {/* Controlled contact form component */}
+        {}
         <ContactForm />
       </div>
     </section>

@@ -13,7 +13,7 @@ function StyleSwitcher({ skinColor, onColorChange }) {
   const [isOpen, setIsOpen] = useState(false);
   const switcherRef = useRef(null);
 
-  // Close the switcher when clicking outside
+  
   useEffect(() => {
     function handleClickOutside(event) {
       if (switcherRef.current && !switcherRef.current.contains(event.target)) {
@@ -21,10 +21,10 @@ function StyleSwitcher({ skinColor, onColorChange }) {
       }
     }
     
-    // Bind the event listener
+    
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      // Unbind the event listener on clean up
+      
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [switcherRef]);

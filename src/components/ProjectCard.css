@@ -23,7 +23,6 @@
   box-shadow: 0 10px 30px rgba(48, 46, 77, 0.2);
 }
 
-/* Image container */
 .project-img-wrap {
   position: relative;
   overflow: hidden;
@@ -41,7 +40,6 @@
   transform: scale(1.05);
 }
 
-/* Overlay */
 .project-overlay {
   position: absolute;
   inset: 0;
@@ -77,7 +75,6 @@
   transform: scale(1.1);
 }
 
-/* Card body */
 .project-card-body {
   padding: 16px;
   flex: 1;
@@ -116,7 +113,6 @@
   margin-bottom: 14px;
 }
 
-/* Details toggle */
 .project-details-toggle {
   background: none;
   border: none;
@@ -157,7 +153,6 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Card actions */
 .project-card-actions {
   display: flex;
   gap: 10px;
@@ -181,7 +176,6 @@
   color: white;
 }
 
-/* Responsive */
 @media (max-width: 991px) {
   .project-card {
     flex: 0 0 50%;

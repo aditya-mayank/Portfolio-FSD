@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './ContactForm.css';
 
-// Email regex for validation
+
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 
@@ -95,7 +95,7 @@ function ContactForm() {
         onSubmit={handleSubmit}
         aria-label="Contact form"
       >
-        {/* Row 1: Name + Email */}
+        {}
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="contact-name">
@@ -142,7 +142,7 @@ function ContactForm() {
           </div>
         </div>
 
-        {/* Row 2: Subject */}
+        {}
         <div className="form-row">
           <div className="form-group full">
             <label htmlFor="contact-subject">
@@ -166,7 +166,7 @@ function ContactForm() {
           </div>
         </div>
 
-        {/* Row 3: Message */}
+        {}
         <div className="form-row">
           <div className="form-group full">
             <label htmlFor="contact-message">
@@ -190,7 +190,7 @@ function ContactForm() {
           </div>
         </div>
 
-        {/* Submit */}
+        {}
         <div className="form-submit-row">
           <button
             id="submit-message-btn"

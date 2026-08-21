@@ -15,7 +15,7 @@ function ProjectCard({ id, title, description, longDescription, tech, image, lin
   return (
     <article className="project-card">
       <div className="project-card-inner shadow-dark">
-        {/* Project image with hover overlay */}
+        {}
         <div className="project-img-wrap">
           <img src={image} alt={`${title} — project screenshot`} loading="lazy" />
           <div className="project-overlay">
@@ -33,20 +33,20 @@ function ProjectCard({ id, title, description, longDescription, tech, image, lin
           </div>
         </div>
 
-        {/* Card body */}
+        {}
         <div className="project-card-body">
           <span className="project-card-category">{category}</span>
           <h3>{title}</h3>
           <p className="project-card-desc">{description}</p>
 
-          {/* Tech badges */}
+          {}
           <div className="project-tech-list" aria-label="Technologies used">
             {tech.map(t => (
               <TechBadge key={t} tech={t} />
             ))}
           </div>
 
-          {/* "View details" button */}
+          {}
           <button
             id={`details-toggle-${id}`}
             className="project-details-toggle"
@@ -64,7 +64,7 @@ function ProjectCard({ id, title, description, longDescription, tech, image, lin
             </p>
           )}
 
-          {/* Card actions */}
+          {}
           <div className="project-card-actions">
             <button
               id={`full-detail-${id}`}
