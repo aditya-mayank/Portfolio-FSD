@@ -1,0 +1,178 @@
+{
+  "info": {
+    "_postman_id": "b1a2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "Portfolio API Collection (Assignment 3)",
+    "description": "Postman Collection covering all seven backend endpoints (B1–B7) with success and failure cases.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "B1 - Health Check (GET /)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/",
+          "host": ["{{baseUrl}}"],
+          "path": [""]
+        }
+      }
+    },
+    {
+      "name": "B2 - Get All Projects (GET /api/projects)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/projects",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "projects"]
+        }
+      }
+    },
+    {
+      "name": "B3 - Get Single Project (Success - 200)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/projects/ai-quiz-builder",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "projects", "ai-quiz-builder"]
+        }
+      }
+    },
+    {
+      "name": "B3 - Get Single Project (Failure - 404)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/projects/non-existent-id",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "projects", "non-existent-id"]
+        }
+      }
+    },
+    {
+      "name": "B4 - Submit Contact Form (Success - 201)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Aditya Mayank\",\n  \"email\": \"aditya@example.com\",\n  \"subject\": \"Inquiry\",\n  \"message\": \"Hello, this is a valid test message for submission.\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/contact",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "contact"]
+        }
+      }
+    },
+    {
+      "name": "B4 - Submit Contact Form (Failure - 400 Invalid Email)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Aditya Mayank\",\n  \"email\": \"invalid-email-format\",\n  \"subject\": \"Test\",\n  \"message\": \"This message is valid but email is invalid.\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/contact",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "contact"]
+        }
+      }
+    },
+    {
+      "name": "B4 - Submit Contact Form (Failure - 400 Missing Fields)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"\",\n  \"email\": \"\",\n  \"message\": \"\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/contact",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "contact"]
+        }
+      }
+    },
+    {
+      "name": "B5 - List Contact Submissions (GET /api/contact)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/contact",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "contact"]
+        }
+      }
+    },
+    {
+      "name": "B6 - Catch-All 404 Handler (GET /api/undefined-route)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/undefined-route",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "undefined-route"]
+        }
+      }
+    },
+    {
+      "name": "B7 - CORS Preflight Options (OPTIONS /api/projects)",
+      "request": {
+        "method": "OPTIONS",
+        "header": [
+          {
+            "key": "Origin",
+            "value": "http://localhost:5173",
+            "type": "text"
+          },
+          {
+            "key": "Access-Control-Request-Method",
+            "value": "GET",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/projects",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "projects"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000",
+      "type": "string"
+    }
+  ]
+}
