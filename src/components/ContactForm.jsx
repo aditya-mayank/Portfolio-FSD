@@ -37,6 +37,9 @@ function ContactForm() {
   const currentErrors = validate(formData);
   const isValid = Object.keys(currentErrors).length === 0;
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [serverError, setServerError] = useState('');
+
   /* ---------- handlers ---------- */
   function handleChange(e) {
     const { name, value } = e.target;
@@ -55,17 +58,46 @@ function ContactForm() {
     }
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
+    setServerError('');
+    
     const validationErrors = validate(formData);
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
-    // Simulate successful form submission
-    setSubmitted(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setErrors({});
+    
+    setIsSubmitting(true);
+    try {
+      const response = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        if (data.errors) {
+          setErrors(data.errors);
+        } else {
+          setServerError(data.error || 'Failed to submit form.');
+        }
+      } else {
+        // Success
+        setSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setErrors({});
+      }
+    } catch (err) {
+      console.error('Submission error:', err);
+      setServerError('Network error. Please make sure the server is running and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   if (submitted) {
@@ -190,17 +222,25 @@ function ContactForm() {
           </div>
         </div>
 
-        {}
+        {serverError && (
+          <div className="form-row">
+            <div className="form-group full">
+              <p className="error-message" style={{ color: 'red', marginTop: '10px' }}>{serverError}</p>
+            </div>
+          </div>
+        )}
+
+        {/* Submit */}
         <div className="form-submit-row">
           <button
             id="submit-message-btn"
             type="submit"
             className="btn"
-            disabled={!isValid}
-            aria-disabled={!isValid}
+            disabled={!isValid || isSubmitting}
+            aria-disabled={!isValid || isSubmitting}
             title={!isValid ? 'Please fill in all required fields' : 'Send your message'}
           >
-            Send Message
+            {isSubmitting ? 'Sending...' : 'Send Message'}
           </button>
         </div>
       </form>

@@ -9,7 +9,6 @@ import ProjectDetail from './pages/ProjectDetail';
 import Contact  from './pages/Contact';
 import NotFound from './pages/NotFound';
 
-import projects from './data/projects';
 import './App.css';
 
 
@@ -67,10 +66,10 @@ function App() {
               <Route path="/about"   element={<About />} />
 
 
-              <Route path="/projects" element={<Projects projects={projects} />} />
+              <Route path="/projects" element={<Projects />} />
 
-              {}
-              <Route path="/projects/:projectId" element={<ProjectDetail projects={projects} />} />
+              {/* Dynamic route for individual project details */}
+              <Route path="/projects/:projectId" element={<ProjectDetail />} />
 
               <Route path="/contact" element={<Contact />} />
 
